@@ -11,13 +11,15 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+       debugShowCheckedModeBanner: false,
       title: 'Login Page',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.deepPurple,
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Login Page'),
+          centerTitle: true,
+          title:  Text('Login Page'),
         ),
         body: Center(
           child: LoginForm(),
